@@ -26,6 +26,12 @@ class Controller extends AbstractController
         return $this->render('report.html.twig');
     }
 
+    #[Route("/report#kmom01")]
+    public function kmom01(): Response
+    {
+        return $this->render('report.html.twig');
+    }
+
     #[Route("/lucky", name: "lucky")] 
     public function lucky(): Response
     {
